@@ -18,5 +18,4 @@ c.pack()
 
 myButton = Button(root, text="show Selection", command=show).pack()
 
-
 mainloop()

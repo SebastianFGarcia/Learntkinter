@@ -5,6 +5,7 @@ root.iconbitmap("imagenes/python.ico")
 root.title("Drop Menus")
 root.geometry("400x400")
 
+
 def show():
     myLabel = Label(root, text=clicked.get()).pack()
 

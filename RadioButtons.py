@@ -4,8 +4,8 @@ root = Tk()
 root.title("Radio Buttons")
 root.iconbitmap('imagenes/python.ico')
 
-#r = IntVar()
-#r.set("2")
+# r = IntVar()
+# r.set("2")
 
 MODES = [
     ("Pollo", "Pollo"),
@@ -18,7 +18,8 @@ pizza = StringVar()
 pizza.set("Pollo")
 
 for text, mode in MODES:
-    Radiobutton(root, text = text, variable = pizza, value = mode).pack(anchor=W)
+    Radiobutton(root, text=text, variable=pizza, value=mode).pack(anchor=W)
+
 
 def click(value):
     milabel1 = Label(root, text=value)

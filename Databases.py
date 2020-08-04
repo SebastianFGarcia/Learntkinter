@@ -1,5 +1,5 @@
-from tkinter import *
 import sqlite3
+from tkinter import *
 
 root = Tk()
 root.title("Databases")
@@ -58,7 +58,7 @@ def submit_update():
             'direccion': edireccion.get(),
             'ciudad': eciudad.get(),
             'zipcode': ezipcode.get(),
-            'oid' : oid
+            'oid': oid
         })
 
     # Cambios del Commit
@@ -74,6 +74,7 @@ def submit_update():
     eciudad.delete(0, END)
     ezipcode.delete(0, END)
     edit.destroy()
+
 
 def update():
     global edit
@@ -128,7 +129,6 @@ def update():
     edireccion.insert(0, record[3])
     eciudad.insert(0, record[4])
     ezipcode.insert(0, record[5])
-
 
     # Boton de enviar
     btn_submit_update = Button(edit, text="Actualizar", command=submit_update)

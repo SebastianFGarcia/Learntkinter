@@ -1,4 +1,5 @@
 from tkinter import *
+
 from PIL import ImageTk, Image
 
 root = Tk()
@@ -14,7 +15,7 @@ def open():
     top.iconbitmap('imagenes/python.ico')
     my_img = ImageTk.PhotoImage(Image.open('imagenes/3198817.svg.png'))
     Label(top, image=my_img).pack()
-    btn2 = Button(top, text="Close",command=top.destroy).pack()
+    btn2 = Button(top, text="Close", command=top.destroy).pack()
 
 
 btn = Button(root, text="New Window!", command=open).pack()
